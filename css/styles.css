@@ -150,9 +150,9 @@ body footer nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -209,10 +209,11 @@ body footer #socials a:hover {
   color: #1ed760;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   body nav.navigation {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -232,6 +233,7 @@ body footer #socials a:hover {
   }
   body main.site-main h1 {
     font-size: 4em;
+    color: white;
   }
   body footer {
     -webkit-box-orient: vertical;
