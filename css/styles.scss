@@ -150,6 +150,9 @@ body {
         nav.navigation {
             justify-content: space-between;
             align-items: center;
+            img {
+                margin-left: 20px;
+            }
             ul#web-menu {
                 display: none;
             }
@@ -157,6 +160,7 @@ body {
                 display: inline;
                 font-size: 1.2em;
                 color: white;
+                margin-right: 20px;
             }
         }
         main.site-main {
