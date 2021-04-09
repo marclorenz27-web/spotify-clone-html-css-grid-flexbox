@@ -76,6 +76,10 @@ body nav.navigation ul li a:hover, body nav.navigation ul li a#sign-up:hover, bo
   color: #1ed760;
 }
 
+body nav.navigation a#mobile-menu-enabler {
+  display: none;
+}
+
 body main.site-main {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -198,12 +202,7 @@ body footer #socials {
 
 body footer #socials a {
   color: white;
-  padding: 12px;
-  width: 30px;
-  height: 30px;
-  text-align: center;
   border-radius: 50%;
-  background-color: #222326;
 }
 
 body footer #socials a:hover {
@@ -211,6 +210,29 @@ body footer #socials a:hover {
 }
 
 @media screen and (max-width: 600px) {
+  body nav.navigation {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body nav.navigation ul#web-menu {
+    display: none;
+  }
+  body nav.navigation a#mobile-menu-enabler {
+    display: inline;
+    font-size: 1.2em;
+    color: white;
+  }
+  body main.site-main {
+    background-size: 70%;
+    width: 100%;
+    text-align: center;
+  }
+  body main.site-main h1 {
+    font-size: 4em;
+  }
   body footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -229,6 +251,9 @@ body footer #socials a:hover {
   }
   body footer div#socials {
     margin-left: 28px;
+  }
+  body footer div#socials a {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

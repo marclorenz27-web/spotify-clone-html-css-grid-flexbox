@@ -53,6 +53,9 @@ body {
                 }
             }
         }
+        a#mobile-menu-enabler {
+            display: none;
+        }
     }
     main.site-main {
         grid-area: site-main;
@@ -134,12 +137,7 @@ body {
             justify-content: space-evenly;
             a {
                 color: white;
-                padding: 12px;
-                width: 30px;
-                height: 30px;
-                text-align: center;
                 border-radius: 50%;
-                background-color: #222326;
             }
             a:hover {
                 color: #1ed760;
@@ -148,6 +146,27 @@ body {
     }
 
     @media screen and (max-width: 600px) {
+        nav.navigation {
+            justify-content: space-around;
+            align-items: center;
+            ul#web-menu {
+                display: none;
+            }
+            a#mobile-menu-enabler {
+                display: inline;
+                font-size: 1.2em;
+                color: white;
+            }
+        }
+        main.site-main {
+            background-size: 70%;
+            width: 100%;
+            text-align: center;
+            h1 {
+                font-size: 4em;
+            }
+        }
+
         footer {
             flex-direction: column;
             nav {
@@ -159,6 +178,9 @@ body {
             }
             div#socials {
                 margin-left: 28px;
+                a {
+                    font-size: 2rem;
+                }
             }
         }
     }
